@@ -1,0 +1,16 @@
+# Переименовать в .env
+# Данные для подключения к Боту
+API_ID=
+API_HASH=
+API_TOKEN=
+# Данные для работы с ботом
+MAIN_CHAT_ID=
+CHAT_ADMIN_ID=
+CHAT_USER_NAME=
+
+# Данные для подключения к БД
+POSTGRES_PASSWORD=
+POSTGRES_USER=
+POSTGRES_DB=users_db
+DB_HOST='localhost'
+DB_PORT='5432'
