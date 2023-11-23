@@ -11,9 +11,4 @@ async def admin_send_command(client_api: Client, message: Message):
     if user_id == int(ADMIN_CHAT_ID):
         # Получаем данные из БД
         data = await select_db.select_from_db()
-        # print(data.fetchall())
-        # data_str = data.fetchall()
-        # print(data_str)
         await client_api.send_message(chat_id=user_id, text=str(data.fetchall()))
-        # for i in data:
-        #     await client_api.send_message(chat_id=user_id, text=str(i))
